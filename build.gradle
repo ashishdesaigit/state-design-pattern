@@ -13,10 +13,6 @@ apply plugin: 'idea'
 group = 'com.ashishd.pattern.behavioural.state'
 version = '0.0.1-SNAPSHOT'
 
-task testReport(type: TestReport) {
-    destinationDir = file("$buildDir/reports/tests")
-    reportOn test
-}
 
 
 configurations {
@@ -30,11 +26,6 @@ repositories {
 }
 
 dependencies {
-
-    testCompile "org.assertj:assertj-core"
-    testCompile "junit:junit"
-    testCompile "org.mockito:mockito-core"
-    testCompile "org.hamcrest:hamcrest-library"
 }
 
 
